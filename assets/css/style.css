@@ -1,0 +1,544 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #f1f1f1;
+	font-family: Verdana,sans-serif;
+}
+
+aside {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	width: 300px;
+	height: 100%;
+	animation: slideLeft 400ms;
+}
+
+aside .avatar {
+	width: 120px;
+	height: 120px;
+	border-radius: 4px;
+	margin: 20px 15px;
+}
+
+aside h3 {
+	text-transform: uppercase;
+	margin: 20px 15px;
+}
+
+aside p {
+	margin: 20px 15px;
+}
+
+aside ul {
+	list-style-type: none;
+}
+
+aside ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px 0;
+	display: block;
+	color: #000;
+}
+
+aside ul li a:hover {
+	background-color: #b6b6b6;
+}
+
+aside ul li a i {
+	margin: 0 15px;
+}
+
+div.social-icons {
+	margin: 20px 15px;
+}
+
+div.social-icons a {
+	text-decoration: none;
+	color: #000;
+	font-size: 1.1em;
+}
+div.social-icons a:hover {
+	color: #b6b6b6;
+
+}
+main {
+	margin-left: 300px;
+	padding: 25px 15px;
+	animation: none;
+	position: relative;
+}
+
+.filter {
+	margin: 25px 0;
+	height: 40px;
+	line-height: 40px;
+}
+
+.filter span {
+	margin-right: 15px;
+}
+
+.filter button {
+	border: none;
+	outline: none;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+	cursor: pointer;
+	background-color: #fff;
+	font-size: 1.05em;
+}
+
+.filter button.active {
+	background-color: #000;
+	color: #fff;
+}
+
+.filter button:hover {
+	background-color: #b6b6b6;
+	color: #000;
+}
+
+.filter i {
+	padding-right: 15px;
+}
+
+section.gallery {
+	border-top: 7px solid #b6b6b6;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+
+section.gallery .gallery-item {
+	width: 32%;
+	margin-bottom: 2%;
+	background-color: #fff;
+}
+
+section.gallery .gallery-item img {
+	width: 100%;
+	height: auto;
+}
+
+section.gallery .gallery-item h4 {
+	margin: 10px;
+}
+
+section.gallery .gallery-item p {
+	margin: 10px;
+	line-height: 1.5em;
+}
+
+section.gallery .gallery-item div {
+	position: relative;
+}
+
+section.gallery .gallery-item div:hover::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(241, 241, 241, .4);
+}
+
+section.gallery ul {
+	width: 100%;
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	margin: 30px 0 20px;
+}
+
+section.gallery ul li a {
+	width: 40px;
+	height: 40px;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	text-decoration: none;
+	color: #000;
+}
+
+section.gallery ul li a.active, section.gallery ul li a:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.main-header {
+	height: 70px;
+	display: none;
+}
+
+.main-header button {
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	padding: 15px;
+	cursor: pointer;
+}
+
+.main-header button:hover {
+	background-color: #b6b6b6;
+}
+
+.main-header button i {
+	font-size: 2.5em;
+}
+
+aside button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	padding: 15px;
+	cursor: pointer;	
+}
+
+aside button:hover {
+	background-color: #b6b6b6;
+}
+
+aside button i {
+	font-size: 2.5em;
+}
+
+.gallery-2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.gallery-2 img {
+	width:50%;
+	height: 400px;
+	}
+
+.gallery-2 img:first-child{
+	padding-right: 20px;
+}
+
+.about-me {
+	margin:30px 0; 
+}
+.about-me h2 {
+	margin:30px 0; 
+}
+
+div.technical-skills p.fz-30 {
+	font-size: 30px;
+	font-weight: normal;
+	color:#34352E;
+}
+
+div.technical-skills p {
+	margin:10px 0;
+}
+
+.percentages {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	background-color: #616161;
+	text-align: center;
+	color: white;
+	line-height: 40px;
+}
+
+
+
+div.nine-five:after {
+	content:"";
+	display:inline-block;
+	float: right;
+	width: 5%;
+	height: 40px;
+	background-color: #b6b6b6;
+	
+}
+
+.eight-five:after {
+	content:"";
+	display:inline-block;
+	float: right;
+	width: 15%;
+	height: 40px;
+	background-color: #b6b6b6;
+
+}
+
+.eight-zero:after {
+	content:"";
+	display:inline-block;
+	float: right;
+	width: 20%;
+	height: 40px;
+	background-color: #b6b6b6;
+
+}
+
+.technical-skills button {
+	font-size: 20px;
+	border: none;
+	margin: 30px 0;
+	padding: 15px;
+	color: white;
+	background-color: #616161;
+}
+
+.technical-skills button i {
+	margin-right: 20px;
+}
+
+.technical-skills button:hover {
+	color:black;
+	background-color: #CCCCCC;
+}
+
+div.how-much {
+	margin-top:30px;
+	width: 100%;
+}
+div.how-much p{
+	font-size: 20px;
+	color:#34352E;
+	margin-bottom: 15px;
+}
+
+.three-blocks {
+	display: flex;
+
+
+}
+
+.block ul {
+	width: 100%;
+	list-style-type: none;
+	text-align: center;
+	border: 1px solid #B9B9B9;
+	opacity: .5;
+	background-color: #fff;
+}
+.block ul:hover {
+	opacity: 1;
+
+}
+.block ul li {
+	padding: 20px;
+	border-bottom: 1px solid #B9B9B9;
+}
+
+.block.basic ul li.color-li {
+	background-color: #008789;
+}
+
+.block ul li:first-child {
+	padding: 25px;
+	background-color: black;
+	color: white;
+	font-size: 30px;
+
+}
+
+.block ul li:last-child {
+	background-color: #F1F1F1;
+	border-bottom: none;
+
+}
+
+.block.basic {
+	display: flex;
+	flex-wrap: wrap;
+	width: 33%;
+	margin-right: 15px;
+}
+.block.basic:last-child {
+	margin-right:0;
+}
+
+.block ul li h2 {
+	font-family: "Raleway", sans-serif;
+	font-size: 30px;
+	padding: 15px;
+}
+
+.block ul li button {
+	width: 130px;
+	height: 50px;
+	border:none;
+	font-size: 18px;
+	background-color: #008789;
+	color:white;
+	margin:10px;
+	outline: none;
+}
+.block ul li button:hover {
+	background-color: black;
+	color:white;
+}
+
+div.contact-me {
+	width: 100%;
+	height: auto;
+	background-color: #9E9E9E;
+	padding: 24px;
+	margin-top: 30px;
+}
+
+div.contacts {
+	display: flex;
+	
+}
+
+div.contacts div {
+	width: 33%;
+	margin:30px 0;
+	text-align: center;
+	color:white;
+	background-color: #616161;
+	border-bottom: 
+
+}
+
+div.contacts div:nth-child(2) {
+		background-color:#008789; 
+}
+
+div.contact-me div i {
+	font-size: 40px;
+	padding: 10px;
+}
+
+div.contact-me div {
+	padding: 10px;
+}
+
+div.contact-me form {
+	padding: 15px 0;
+	border-top: 3px solid white;
+}
+
+div.contact-me form input {
+	font-size: 35px;
+	width: 100%;
+}
+
+div.contact-me form p {
+	margin-top: 20px;
+}
+
+div.contact-me form button {
+	width: 150px;
+	height: 40px;
+	background-color: black;
+	color: white;
+	outline: none;
+	border: none;
+	margin-top: 20px;
+	font-size: 15px;
+}
+
+div.contact-me form button:hover {
+	background-color: #CBCBCB;
+	color:black;
+}
+
+div.contact-me form button i {
+	font-size: 20px;
+	padding-right: 10px;
+
+}
+
+footer {
+	width: 100%;
+	background-color: #616161;
+	border-bottom: 80px solid black;
+}
+div.info-tags  {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+div.info-tags div {
+	width: 33%;
+	padding: 50px 30px;
+	color:white;
+}
+
+div.info-tags div h2 {
+	text-transform:uppercase;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+
+div.blog-posts ul {
+	list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.blog-posts ul li div{
+	width: auto;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+.blog-posts ul li div p{
+	
+	margin-left: 12px;
+	padding-bottom: 5px;
+	}
+
+
+
+div.blog-posts ul li img{
+	width: 50px;
+	border: none;
+	display: inline-block;
+
+}
+
+.blog-posts ul li{
+	padding: 16px 16px;
+    border-bottom: 1px solid #ddd;
+   
+}
+.blog-posts ul li:last-child {
+	border-bottom: none;
+}
+
+div.popular-tags span {
+	font-size: 12px;
+	font-style: normal;
+	display: inline-block;
+    padding: 2px 12px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #9E9E9E;
+    color:black;
+}
+
+div.popular-tags span:nth-child(2){
+	background-color: #000;
+	color: #fff;
+	font-size: 15px;
+}
+
